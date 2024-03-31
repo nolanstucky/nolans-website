@@ -1,0 +1,126 @@
+.homepage {
+    text-align: center;
+    width: 100%;
+    
+}
+
+.title-container {
+    padding: 50px;
+    margin-bottom: 2%;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-title {
+    font-size: 8em;
+    margin-bottom: 0px;
+}
+
+.name-subtitle {
+    font-size: 4em;
+    margin-bottom: 20px;
+    margin-top: -20px
+}
+
+
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.content-container {
+    display: flex;
+   
+   
+    flex-wrap: wrap;
+    width: 50%;
+
+    
+}
+
+.spacer {
+    height: 5000px;
+}
+
+.image-container {
+    flex: 1;
+    position: relative;
+}
+.image-button {
+    position: absolute; /* Position absolutely within .image-container */
+    top: 80%; /* Center vertically - adjust as needed */
+    left: 50%; /* Center horizontally - adjust as needed */
+    transform: translate(-50%, -50%); /* Adjust to perfectly center */
+    z-index: 10;
+}
+
+.buttons-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100px;
+    width: 100%;
+
+
+}
+
+.button {
+    margin: 5px;
+    padding: 5px 20px;
+}
+
+.about-me-section {
+    min-height: 100vh; /* Make the About Me section at least the height of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers the content vertically */
+    align-items: center; /* Centers the content horizontally */
+    padding: 20px; /* Add some padding */
+    /* Add any additional styling you desire */
+}
+
+/* Responsive styling */
+
+@media (max-width: 1000px) {
+
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .image-container,
+    .buttons-container {
+        width: 65%;
+        margin-bottom: 20px;
+        
+    }
+}
+
+@media (max-width: 700px) {
+    .name-title {
+        font-size: 3em;
+        margin-bottom: 15px;
+    }
+
+    .name-subtitle {
+        font-size: 2em;
+
+    }
+
+    .content-container {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .image-container,
+    .buttons-container {
+        width: 65%;
+        margin-bottom: 20px;
+        
+    }
+}
+

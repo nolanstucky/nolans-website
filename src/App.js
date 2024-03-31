@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar'; // Import your Navbar component
+import Home from './screens/Home'; // Your Home component
+import Projects from './screens/Projects'
+import Games from './screens/Games'
+import './App.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='tileable-background'>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects/>} />
+        <Route path="/games" element={<Games/>}/>
+      </Routes>
+    </Router>
     </div>
   );
 }
