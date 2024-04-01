@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 
-const AnimatedButton = ({ opacity, color, backgroundColor, width, height, children, redirectTo }) => {
+const AnimatedButton = ({ opacity, color, backgroundColor, width, height, children, redirectTo, isHoverable=true, hoverScale=1.15 }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [firstDraw, setFirstDraw] = useState(true);
   const navigate = useNavigate();
@@ -53,9 +53,9 @@ const AnimatedButton = ({ opacity, color, backgroundColor, width, height, childr
   return (
     <motion.div
       style={{ position: 'relative', width, height }}
-      onHoverStart={() => setIsHovered(true)}
+      onHoverStart={() => setIsHovered(isHoverable)}
       onHoverEnd={() => setIsHovered(false)}
-      whileHover={{ scale: 1.1 }} 
+      whileHover={{ scale: hoverScale }} 
       transition={{ type: 'spring', stiffness: 300 }} 
       onClick={handleClick}
     >

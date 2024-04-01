@@ -106,7 +106,7 @@ const ProjectCard = ({ project }) => {
                     textAlign: 'center',
                 }}
             >
-                <motion.h5 style={{ margin: 0}}>{project.title}</motion.h5>
+                <motion.h5 style={{ marginTop: "-15px"}}>{project.title}</motion.h5>
             </motion.div>
         </motion.div>
         {isExpanded && <ExpandedProject project={project} toggleExpand={toggleExpand} />}

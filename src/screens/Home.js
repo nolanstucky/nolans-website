@@ -51,7 +51,7 @@ const Home = () => {
                         </AnimatedButton>
                         </div>
                         <div className='button'>
-                        <AnimatedButton opacity="0" color="grey" width={130} height={40} >
+                        <AnimatedButton opacity="0" color="grey" width={130} height={40} isHoverable={false}>
                             <ArtText/>
                         </AnimatedButton>
                         </div>
