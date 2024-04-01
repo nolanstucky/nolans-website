@@ -1,6 +1,6 @@
 {
   "name": "nolans-website",
-  "homepage": "https://nolanstucky.github.io",
+  "homepage": "https://nolanstucky.github.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
