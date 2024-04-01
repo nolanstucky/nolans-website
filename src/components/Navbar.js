@@ -48,8 +48,16 @@ const Navbar = () => {
           <AnimatedText text="Home" />
         </Link>
         <div style={styles.separator}></div>
-        <Link to="/projects" style={styles.link}>
+        <Link to="/games" style={styles.link}>
+          <AnimatedText text="Game" />
+          <div style={{marginLeft: "5px"}}/>
+
           <AnimatedText text="Projects" />
+        </Link>
+        <Link to="/webdev" style={styles.link}>
+          <AnimatedText text="Web" />
+          <div style={{marginLeft: "5px"}}/>
+          <AnimatedText text="Dev" />
           
         </Link>
       </div>

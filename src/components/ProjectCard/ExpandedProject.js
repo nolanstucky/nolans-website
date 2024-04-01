@@ -66,8 +66,8 @@ const ExpandedProject = ({ project, toggleExpand }) => {
                     }}
                 >
                     {/* Image, description, and other details */}
-                    <img src={project.image} alt={project.title} style={{ width: '50%', height: 'auto' }} />
-                    <h2>{project.title}</h2>
+                    <img src={project.image} alt={project.title} style={{ width: '50%', height: 'auto', aspectRatio: 16/9}} />
+                    <h2>{project.projectTitle}</h2>
                     {/* Add more content as needed */}
 
                     {/* Animated borders */}

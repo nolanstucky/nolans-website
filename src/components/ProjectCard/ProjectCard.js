@@ -54,8 +54,8 @@ const ProjectCard = ({ project }) => {
                 {/* Project image */}
                 <motion.img 
                     src={project.image} 
-                    alt={project.title} 
-                    style={{ width: '100%', height: 'auto', borderRadius: '10px 10px 0 0', padding: '15px' }}
+                    alt={project.projectTitle} 
+                    style={{ width: '100%', height: 'auto', borderRadius: '10px 10px 0 0', padding: '15px', aspectRatio: 16/9}}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 1, duration: 1 }}
@@ -106,7 +106,7 @@ const ProjectCard = ({ project }) => {
                     textAlign: 'center',
                 }}
             >
-                <motion.h5 style={{ marginTop: "-15px"}}>{project.title}</motion.h5>
+                <motion.h5 style={{ marginTop: "-15px"}}>{project.projectTitle}</motion.h5>
             </motion.div>
         </motion.div>
         {isExpanded && <ExpandedProject project={project} toggleExpand={toggleExpand} />}
