@@ -48,7 +48,7 @@ const ProjectCard = ({ project }) => {
             <div style={{ 
                 position: 'relative', 
                 width: '100%', 
-                height: '275px', // Fixed height
+                 // Fixed height
                 overflow: 'hidden', // Hide overflow to maintain aspect ratio
             }}>
                 {/* Project image */}
@@ -102,11 +102,11 @@ const ProjectCard = ({ project }) => {
             <motion.div
                 style={{ 
                     padding: '5px',
-                    backgroundColor: '#fff',
+                    
                     textAlign: 'center',
                 }}
             >
-                <motion.h5 style={{ margin: 0 }}>{project.title}</motion.h5>
+                <motion.h5 style={{ margin: 0}}>{project.title}</motion.h5>
             </motion.div>
         </motion.div>
         {isExpanded && <ExpandedProject project={project} toggleExpand={toggleExpand} />}
