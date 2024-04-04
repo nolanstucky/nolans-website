@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.81258640.css",
-    "main.js": "/static/js/main.5dd5979f.js",
+    "main.css": "/static/css/main.3c1a690b.css",
+    "main.js": "/static/js/main.e5700572.js",
     "static/js/787.7b57a7ca.chunk.js": "/static/js/787.7b57a7ca.chunk.js",
     "static/media/bugatopotato2.gif": "/static/media/bugatopotato2.447f998304a703892769.gif",
     "static/media/jawbreaker2.gif": "/static/media/jawbreaker2.2a165db2eb13f953d588.gif",
     "static/media/LolChampTracker.gif": "/static/media/LolChampTracker.9605b55792e8b4a1888f.gif",
     "static/media/nolanHeadshot.png": "/static/media/nolanHeadshot.55e770521aa51d13b71f.png",
+    "static/media/nolanprofile.png": "/static/media/nolanprofile.55e770521aa51d13b71f.png",
     "static/media/glasshouse2.gif": "/static/media/glasshouse2.b988d9a4088087bb634a.gif",
     "static/media/noisy-texture1.png": "/static/media/noisy-texture1.ea6c27ea3d1ff74680dc.png",
     "index.html": "/index.html",
-    "main.81258640.css.map": "/static/css/main.81258640.css.map",
-    "main.5dd5979f.js.map": "/static/js/main.5dd5979f.js.map",
+    "main.3c1a690b.css.map": "/static/css/main.3c1a690b.css.map",
+    "main.e5700572.js.map": "/static/js/main.e5700572.js.map",
     "787.7b57a7ca.chunk.js.map": "/static/js/787.7b57a7ca.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.81258640.css",
-    "static/js/main.5dd5979f.js"
+    "static/css/main.3c1a690b.css",
+    "static/js/main.e5700572.js"
   ]
 }
