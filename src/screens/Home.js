@@ -88,6 +88,9 @@ const Home = () => {
                     <div className="right-side">
                         <div className="description">
                             <h2>About Me</h2>
+                            <h3>_</h3>
+                            <h3>I am a software developer with a passion in creating functional and appealing applications. </h3>
+                            <h3>Don't worry potential employers I will fill more information here!</h3>
                         </div>
                         <div className="technologies"></div>
                         <div className="projects">

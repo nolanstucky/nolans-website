@@ -26,7 +26,7 @@ const NameTitle = (props) => {
   
 
   return (
-    <svg className="name-title" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="140 0 50 60"  {...props}>
+    <svg className="name-title" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="140 10 50 60"  {...props}>
       <defs>
         <style>{".cls-56{stroke:#231f20;stroke-width: 0.5px;}"}</style>
       </defs>
