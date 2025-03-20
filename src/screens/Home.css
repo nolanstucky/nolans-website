@@ -5,10 +5,12 @@
 }
 
 .title-container {
-    padding: 50px;
-    margin-bottom: 2%;
+    display: flex;
+    flex-direction: column; /* Stack your titles vertically */
     justify-content: center;
     align-items: center;
+    padding: 50px;
+    margin-bottom: 2%;
 }
 
 .name-title {
@@ -54,6 +56,7 @@
     left: 50%; /* Center horizontally - adjust as needed */
     transform: translate(-50%, -50%); /* Adjust to perfectly center */
     z-index: 10;
+    
 }
 
 .buttons-container {
@@ -63,6 +66,17 @@
     align-items: center;
     min-width: 100px;
     width: 100%;
+  
+
+
+}
+.buttons-container2 {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: 100px;
+    width: 50%;
 
 
 }
@@ -73,33 +87,148 @@
 }
 
 .about-me-section {
-    min-height: 100vh; /* Make the About Me section at least the height of the viewport */
+    margin-top: 5%;
+    min-height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centers the content vertically */
-    align-items: center; /* Centers the content horizontally */
-    padding: 20px; /* Add some padding */
-    /* Add any additional styling you desire */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
+.content-wrapper {
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    gap: 20px;
+   
+    /* No changes needed here */
+    width: 900px;
+}
+
+.left-side, .right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.left-side {
+    flex-basis: 300px;
+   
+}
+
+.profile-picture {
+    height: 60%; /* or any specific height */
+    width: 100%; /* Ensures the div fills the designated space */
+    display: flex; /* Enables center alignment of the image */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.profile-picture img {
+    max-height: 100%; /* Ensures the image height does not exceed the div's height */
+    max-width: 100%; /* Ensures the image width does not exceed the div's width */
+    object-fit: contain; /* Ensures the aspect ratio is maintained without cropping */
+    border-radius: 15px;
+    
+}
+
+.social-links {
+    height: 40%;
+   /* Just for visualization */
+    min-height: 40px; /* Ensures visibility */
+}
+
+.right-side {
+    flex: 1.5;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+     /* Just for visualization */
+    min-height: 100px; /* Ensures visibility */
+}
+
+.description {
+    height: 50%;
+    width: 100%;
+     /* Just for visualization */
+    min-height: 50vh; /* Ensures visibility */
+    
+}
+
+.technologies {
+    height: 15%;
+    /* Just for visualization */
+    min-height: 30px; /* Ensures visibility */
+}
+
+.projects {
+    flex-grow: 1;
+     /* Just for visualization */
+    min-height: 40px; /* Ensures minimum visibility */
+}
 /* Responsive styling */
+
+@media (max-width: 1100px) {
+    .image-container{
+        margin-bottom: 50px;
+    }
+}
 
 @media (max-width: 1000px) {
 
     .content-container {
         flex-direction: column;
-        align-items: center;
         width: 100%;
+        align-items: center;
     }
     .image-container,
     .buttons-container {
         width: 65%;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
         
+    }
+    .content-wrapper {
+        flex-direction: column; /* Changes layout to a single column */
+        width: 60%; /* Adjust width as needed for smaller screens */
+        height: auto; /* Allow the container to grow with its content */
+    }
+
+    .left-side, .right-side {
+        width: 100%; /* Ensure children take full width of the container */
+        
+    }
+
+    .description {
+        width: 100%; /* Ensure the description takes full width */
+    }
+
+    /* Adjust the heights or min-heights as necessary */
+    .profile-picture {
+        justify-content: center;
+        align-items: center;
+    }
+    .projects {
+        flex-direction: column;
+        
+        align-items: center;
+    }
+}
+
+@media (max-width: 875px) {
+    .content-wrapper {
+        width: 70%; /* Adjust width as needed for smaller screens */
+
     }
 }
 
 @media (max-width: 700px) {
+    .content-wrapper {
+        width: 85%; /* Adjust width as needed for smaller screens */
+
+    }
     .name-title {
         font-size: 3em;
         margin-bottom: 15px;
@@ -120,7 +249,27 @@
     .buttons-container {
         width: 65%;
         margin-bottom: 20px;
+    
         
     }
+    .buttons-container2 {
+       
+        flex-direction: column;
+        display: flex;
+        justify-content: center; /* Vertically center the buttons in the container */
+        align-items: center; /* Horizontally center the buttons */
+        width: 100%; /* Take up 100% width of its parent to ensure centering works correctly */
+        margin-bottom: 20px;
+        
+    }
+    .buttons-container {
+        margin-top: 50px;
+    
+        
+    }
+    .about-me-section{
+        min-height: 115vh;
+    }
 }
+
 

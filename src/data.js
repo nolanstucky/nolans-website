@@ -2,7 +2,8 @@ const projectData = [
     {
         id: 1,
         projectTitle: "Check Your Fridge",
-        image: "https://github.com/nolanstucky/NS-React-Portfolio/blob/main/public/assets/check-your-fridge.png?raw=true",
+        image: ["https://github.com/nolanstucky/NS-React-Portfolio/blob/main/public/assets/check-your-fridge.png?raw=true", 
+                "https://github.com/nolanstucky/NS-React-Portfolio/blob/main/public/assets/check-your-fridge.png?raw=true",],
         description: "Check Your Fridge creates a database of food that you have in your fridge. Using Spoonacular API, you can find recipes that use specific ingredients to help you use your food before it expires",
         deployedLink: "https://cryptic-shore-39350.herokuapp.com/",
         githubLink: "https://github.com/lbalbrecht/check-your-fridge",

@@ -1,0 +1,39 @@
+.webdev-title{
+    width: 70%;
+    height: 17vh;
+  
+}
+
+@media (max-width: 800px) {
+    .webdev-title {
+        transform: scale(0.9);
+        width: 100%;
+        height: 14vh;
+    }
+}
+
+@media (max-width: 700px) {
+    .webdev-title {
+        transform: scale(0.75);
+        width: 140%;
+    }
+}
+
+@media (max-width: 650px) {
+    .webdev-title {
+        transform: scale(0.75);
+        height: 12vh;
+    }
+}
+
+@media (max-width: 700px) {
+    .webdev-title {
+        transform: scale(0.75);
+    }
+}
+
+@media (max-width: 700px) {
+    .webdev-title {
+        transform: scale(0.75);
+    }
+}

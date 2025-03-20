@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import TestMotion from './TestMotion';
 import AnimatedText from './AnimatedText';
+import './Navbar.css'
 
 const Navbar = () => {
   const navbarWidth = window.innerWidth;
@@ -50,14 +51,20 @@ const Navbar = () => {
         <div style={styles.separator}></div>
         <Link to="/games" style={styles.link}>
           <AnimatedText text="Game" />
-          <div style={{marginLeft: "5px"}}/>
+          <div className="inbetween" />
 
           <AnimatedText text="Projects" />
         </Link>
         <Link to="/webdev" style={styles.link}>
           <AnimatedText text="Web" />
-          <div style={{marginLeft: "5px"}}/>
+          <div className="inbetween" />
           <AnimatedText text="Dev" />
+          
+        </Link>
+        <Link to="/portfolio" style={styles.link}>
+          <AnimatedText text="Technical" />
+          <div className="inbetween" />
+          <AnimatedText text="Art" />
           
         </Link>
       </div>
@@ -93,5 +100,5 @@ const styles = {
     width: '1px',
     backgroundColor: borderColor,
     margin: '0 10px',
-  }
+  },
 };
